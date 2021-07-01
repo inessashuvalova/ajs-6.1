@@ -1,0 +1,12 @@
+{
+    "extends": ["airbnb"],
+    "env": {
+      "es6": true,
+      "browser": true,
+      "jest": true
+    },
+    "rules": {
+      "import/extensions": 0,
+      "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"]
+    }
+  }
