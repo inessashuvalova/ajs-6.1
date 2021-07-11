@@ -2,13 +2,11 @@ import orderByProps from "../App";
 
 const objTest = { name: 'мечник', health: 10, level: 2, attack: 80, defence: 40 };
 
-test('function throws Err with bad data input', () => {
-    expect(() => {
-        orderByProps();
-    }).toThrowError(new Error('bad data input'));
-});
+test('Функция будет работать, если не передать пропсы', () => {
+    expect(() => orderByProps(objTest)).not.toThrow();
+  });
 
-test('orderByProps() returns incorrecr result', () => {
+test('orderByProps() returns incorrect result', () => {
     const expectedObject = [
         { key: 'name', value: 'мечник' },
         { key: 'level', value: 2 },

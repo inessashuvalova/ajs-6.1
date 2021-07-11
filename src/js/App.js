@@ -1,8 +1,5 @@
-export default function orderByProps(obj, keys) {
-    if (!obj || typeof obj !== 'object' || !keys || !Array.isArray(keys)) {
-        throw new Error('bad data input');
-    }
-
+export default function orderByProps(obj, keys = []) {
+    
     const arrayKeys = [];
     const sortedArray = [];
 
