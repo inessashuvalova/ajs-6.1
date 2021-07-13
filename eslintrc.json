@@ -5,9 +5,6 @@
       "browser": true,
       "jest": true
     },
-    "parseOptions": {
-      "sourceType": "module"
-    },
     "rules": {
       "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"]
     }
